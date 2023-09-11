@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            
+            
+        }
+        hr{
+            display: none;
+        }
+        .img_1{
+                width: 100px;
+                height: 140px;
+                
+            }
+        .img_2{
+                width: 60px;
+                height: 60px;
+                margin-top: 45px;
+            }
+        
+        .item{
+            background-color: rgb(247, 133, 133);
+            width: 300px;
+            height: 300px;
+            border-width: 15px;
+            border-color: red;
+            box-shadow: inset 7px 7px 4px ;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-weight: 700;
+            margin: 20px;
+            padding: 10px;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            flex-grow: 1;
+        }
+        .item:hover {
+            box-shadow: 7px 7px 4px;
+            font-size: 17px;
+            display: flex;
+        }
+
+        .item:hover .img_1 {
+            width: 105px;
+            height: 147px;
+        }
+
+        .item:hover .img_2 {
+            width: 65px;
+            height: 65px;
+        }
+        .navbar{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            list-style: none;
+            background-color: rgba(255, 0, 0, 0.61);
+            color: rgb(0, 0, 0);
+            flex-wrap: nowrap;
+            font-weight: 700;
+        }
+        .nav{
+            display: flex;
+            margin: 10px;
+            padding-inline: 30px;
+            
+        }
+        .nav:hover{
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            padding-top: 5px;
+            border-radius: 10px;
+        }
+        @media (max-width:600px) {
+            .nav{
+                justify-content: center;
+                padding:10px ;
+            }
+            .navbar{
+              display: block;  
+              
+            }
+            .hr{
+                display: block;
+                width:10%;
+                background-color: black;
+                border-style: solid;
+                color: black;
+            }
+        }
+        .text_1{
+            position: relative;
+            bottom: 18px;
+        }
+        .text_2{
+                position: relative;
+                top: 20px;
+                
+            }
+        .line_1{
+                display: block;
+                width:10%;
+                background-color: black;
+                border-style: solid;
+                color: black;
+                margin-bottom: 50px;
+            }
+        .line_2{
+            display: block;
+            width:10%;
+            background-color: black;
+            border-style: solid;
+            color: black;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li class="nav" id="nav_item-1">HOME</li>
+        <hr class="hr">
+        <li class="nav" id="nav_item-2">ABOUT</li>
+        <hr class="hr">
+        <li class="nav" id="nav_item-3">DOWNLOAD</li>
+        <hr class="hr">
+        <li class="nav" id="nav_item-4">LAUNCH</li>
+        <hr class="hr">
+        <li class="nav" id="nav_item-5">LOGIN</li>
+    </ul>
+    <div class="container">
+        <div class="item" id="item_1"><div><img src="downloadicon.png" alt="" class="img_1"></div><div class="text_1">DOWNLOAD MY GAME </div><hr class="line_1"><div></div></div>
+        <div class="item" id="item_2"><img src="Circular+Blue+Rocket+Icon+Trans+Bckg.png" alt="" class="img_2"><div class="text_2">DOWNLOAD MY GAME </div><hr class="line_2"><div></div></div>
+        <div class="item" id="item_3"><img src="red-computer-icon.png" alt="" class="img_2"><div class="text_2">DOWNLOAD MY GAME </div><hr class="line_2"><div></div></div>
+    </div>
+        
+
+        
+    
+    <div class="Button"></div>
+</body>
+</html>
